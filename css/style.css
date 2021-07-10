@@ -24,5 +24,61 @@ section {
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.25);
+    padding: 0px 5%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    margin: 30px;
+    font-family: Myriad Pro Regular;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.logo {
+    font-family: RoadTest;
+    color: black;
+    font-size: 22px;
+}
+
+.active {
+    font-weight: bold;
+    color: #2d2a2a;
+}
+
+.text-container p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: #6f6f6f;
+    font-size: 22px;
+}
+
+.text-container p:nth-child(2) {
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    font-size: 60px;
+}
+
+.text-contaner p:nth-child(3) {
+    font-family: myriad pro regular;
+    color: #403e3e;
+    font-size: 30px;
+}
+
+.text-container p {
+    line-height: 0px;
+    margin: 45px 0px 25px;
+}
+
+.text-container {
+    position: absolute
 }

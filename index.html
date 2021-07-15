@@ -1,47 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <title>Document</title>
-</head>
-<body>
-    <section>   
-        <nav>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/ecbf6a5fd5.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-            <a href="#" class="logo">DanDotCom</a>
+    <title>Full-Stack Developer - Daniel Pisani</title>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <a href="#" class="lead-title" id="lead-title">Daniel Pisani</a>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#lead-title" class="active">Home</a></li>
+                <li><a href="#about-text">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="2021.06.Daniel.Pisani.Web.CV2.pdf" download target="_blank" rel="nonreferrer">Resume</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
 
         <!-- Main section -->
-        <div class="text-container">
-            <p>Hello,</p>
-            <p>I'm DANIEL</p>
-            <p>& I am a Full-Stack Web Developer</p>
-            <button class="hire-btn">Hire me</button>
-            <button class="down-cv">Download CV</button>
+        <div class="intro-container">
+            <p data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="0">Hello,</p>
+            <p data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="600">I'm DANIEL</p>
+            <p data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="1200">& I am a Full-Stack Web Developer</p>
+            <p data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="2000">(& a Registered Dietitian)</p>
+            <a href="#portfolio"><button class="portfolio-btn">Portfolio</button></a>
+            <a href="2021.06.Daniel.Pisani.Web.CV2.pdf" download 
+            target="_blank" 
+            rel="nonreferrer"><button class="down-cv">Download CV</button></a>
         </div>
-
+        <div class="cover-images">
+            <img data-aos="zoom-in" 
+            data-aos-duration="1000"
+            src="images/danielmodelphoto.png" 
+            id="daniel-cover" />
+            <img src="images/codingbg.png" id="coding-cover" />
+        </div>
     </section>
 
     <div class="about-container">
         <!-- About text -->
-        <div class="about-text">
-            <p>About Me</p>
-            <p>Full-Stack Developer and Health Professional</p>
-            <p> Paragraph 3</p>
-            <p> Paragraph 4</p>
-            <button>Hire Me</button>
-            <button>Download CV</button>
+        <div class="about-text" id="about-text">
+            <h1>More About Me</h1>
+            <h2>Full-Stack Developer and Health Professional</h2>
+            <p>Greetings world! My name is Daniel (he/him). I'm a full-stack web developer, capable of building a wide
+                variety of applications. Each day, I strive to better understand how computers and the internet can help
+                transform the world, especially the medical and political spheres.</p>
+            <p>In addition to this, I'm a practicing Registered Dietitian, allowing me to bring years of clinical
+                experience in medical environments to my coding projects.</p>
+            <a href="#portfolio"><button class="portfolio-btn">Portfolio</button></a>
+            <a href="2021.06.Daniel.Pisani.Web.CV2.pdf" download 
+            target="_blank" 
+            rel="nonreferrer"><button class="down-cv">Download CV</button></a>
+        </div>
+    </div>
+
+    <!-- Portfolio section -->
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio-text">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Vanilla Javascript</li>
+                <li>JQuery (though I hate it)</li>
+                <li>MySQL</li>
+                <li>ORM/Sequelize</li>
+                <li>Node.js / Express.js</li>
+                <li>HTML Routing</li>
+                <li>RESTful APIs</li>
+                <li>MongoDB/GraphQL</li>
+            </div>
+        </div>
+        <br>
+        <h2>Recent Projects</h2>
+        <div class="box-container">
+            <div data-aos="fade-right" class="box" id="box-1" data-tilt data-tilt-max="5">
+                <div class="image-box" id="image-box-1">
+                </div>
+                <div class="inner-box">
+                    <span>1</span>
+                    <h3 class="heading">Birdwatcher App (Quack)</h3>
+                    <p class="details">A log-in portal to view/submit bird sightings and add bird profiles.</p>
+                    <a href="https://github.com/WellAndGood/BirdWatcher-1" target="_blank">
+                        Github
+                    </a>
+                    <br>
+                    <a href="http://birdwatcherquack.herokuapp.com/" target="_blank">
+                        Deployed Application
+                    </a>
+                </div>
+            </div>
+            <div data-aos="fade-left" class="box" id="box-2" data-tilt data-tilt-max="5">
+                <div class="image-box" id="image-box-2">
+                </div>
+                <div class="inner-box">
+                    <span>2</span>
+                    <h3 class="heading">Vuze Musical</h3>
+                    <p class="details">A music-based API to help you explore new instruments and tutorials.</p>
+                    <a href="https://github.com/WellAndGood/BCS-Project-1" target="_blank">
+                        Github
+                    </a>
+                    <br>
+                    <a href="https://wellandgood.github.io/BCS-Project-1/" target="_blank">
+                        Deployed Application
+                    </a>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="box" id="box-3" data-tilt data-tilt-max="5">
+                <div class="image-box" id="image-box-3">
+                </div>
+                <div class="inner-box">
+                    <span>3</span>
+                    <h3 class="heading">Password Generator</h3>
+                    <p class="details">A Javascript-powered password generator, between 8 and 128 characters.</p>
+                    <a href="https://github.com/WellAndGood/JavascriptPasswordGenerator" target="_blank">
+                        Github
+                    </a>
+                    <br>
+                    <a href="https://wellandgood.github.io/JavascriptPasswordGenerator/" target="_blank">
+                        Deployed Application
+                    </a>
+                </div>
+            </div>
+            <div data-aos="fade-left" class="box" id="box-4" data-tilt data-tilt-max="5">
+                <div class="image-box" id="image-box-4">
+                </div>
+                <div class="inner-box">
+                    <span>4</span>
+                    <h3 class="heading">Weather Network</h3>
+                    <p class="details">With HTML/CSS/Javascript/APIs; A weather-based API to help you settle the weather and predicted forecasts in your city of choice.</p>
+                    <a href="https://github.com/WellAndGood/DanielsWeatherNetwork" target="_blank">
+                        Github
+                    </a>
+                    <br>
+                    <a href="https://wellandgood.github.io/DanielsWeatherNetwork/" target="_blank">
+                        Deployed Application
+                    </a>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="box" id="box-5" data-tilt data-tilt-max="5">
+                <div class="image-box" id="image-box-5" >
+                </div>
+                <div class="inner-box">
+                    <span>5</span>
+                    <h3 class="heading">Employee Tracker</h3>
+                    <p class="details">With MySQL; A back-end application to add employees, categorize them into departments, and create/remove employees and departments.</p>
+                    <a href="https://github.com/WellAndGood/EmployeeTrackerSQL" target="_blank">
+                        Github
+                    </a>
+                </div>
+            </div>
+            <div data-aos="fade-left" class="box" id="box-6" data-tilt data-tilt-max="5">
+                <div class="image-box" id="image-box-6">
+                </div>
+                <div class="inner-box">
+                    <span>6</span>
+                    <h3 class="heading">Front-End Team-Builder</h3>
+                    <p class="details">With Node.js; A Node-powered command line application, which generates an HTML webpage.</p>
+                    <a href="https://github.com/WellAndGood/Team-Profile-Generator" target="_blank">
+                        Github
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-me" id="contact-me">
+        <p>If You Have Any Projects in Mind...</p>
+        <h1 style="color: white">Contact Me</h1> 
+        <div class="contact-form">
+            <div class="contact-form-left">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>  
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Optional">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone-number">Phone Number</label>
+                <input type="text" id="phone-number" name="phone-number" placeholder="Optional">
+            </div>
+            <div class="contact-form-right">
+                <label for="form-message" required>Message</label>
+                <textarea id="form-message" name="form-message"></textarea>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/WellAndGood" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+            <a href="mailto:danielpisani12@hotmail.com" target="_blank" rel="noreferrer"><i
+                    class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/danielpisani/" target="_blank" rel="noreferrer"><i
+                    class="fab fa-linkedin"></i></a>
         </div>
 
-    </div>
+        <p>Copyright by Daniel Inc.</p>
+
+        <!-- Sideways Social Bar -->
+        <div class="a-social-bar">
+            <a href="https://github.com/WellAndGood" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+            <a href="mailto:danielpisani12@hotmail.com" target="_blank" rel="noreferrer"><i
+                    class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/danielpisani/" target="_blank" rel="noreferrer"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </html>
